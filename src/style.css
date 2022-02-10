@@ -1,1 +1,19 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.instaHeader {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+}
+.entireView {
+  border-style: solid;
+  width: 1000px;
+  height: 1000px;
+}
+.gridPicture {
+  width: 300px;
+  height: 200px;
+}
+.createModalIcon {
+  width: 30px;
+  height: 28px;
+}

@@ -10,8 +10,127 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div>First Div</div>
+    <div class="entireView mx-auto">
+      <div class="NavBar d-flex justify-content-between mt-2">
+        <div class="instaHeader d-flex">
+          <i class="fab fa-instagram fa-lg mt-2"></i>
+          <p class="instaHeader mx-1">Instagram</p>
+        </div>
+        <div class="d-flex">
+          <div>
+            <button
+              type="button"
+              class="btn btn-success mx-2 mt-1"
+              data-bs-toggle="modal"
+              data-bs-target="#createPostModal"
+            >
+              Create A New Post
+            </button>
+            <div
+              class="modal fade"
+              id="createPostModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Create Post
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <input
+                      class="form-control form-control-lg"
+                      type="text"
+                      placeholder="Insert Description Here"
+                      aria-label=".form-control-lg example"
+                    />
+                    <div class="d-flex mt-2">
+                      <div
+                        class="createModalIcon border border-secondary rounded text-center mx-2"
+                      >
+                        <i class="fas fa-camera"></i>
+                      </div>
+                      <div
+                        class="createModalIcon border border-secondary rounded text-center"
+                      >
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    <button type="button" class="btn btn-success">
+                      Publish
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2 me-2">
+            <i class="fas fa-cog"></i>
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="gridPicture col m-1 bg-dark">
+            Column
+          </div>
+          <div class="gridPicture col m-1 bg-dark">
+            Column
+          </div>
+          <div class="gridPicture col m-1 bg-dark">
+            Column
+          </div>
+        </div>
+        <div class="row">
+          <div class="gridPicture col m-1 bg-dark">
+            Column
+          </div>
+          <div class="gridPicture col m-1 bg-dark">
+            Column
+          </div>
+          <div class="gridPicture col m-1 bg-dark">
+            Column
+          </div>
+        </div>
+        <div class="row">
+          <div class="gridPicture col m-1 bg-dark">
+            Column
+          </div>
+          <div class="gridPicture col m-1 bg-dark">
+            Column
+          </div>
+          <div class="gridPicture col m-1 bg-dark">
+            Column
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
